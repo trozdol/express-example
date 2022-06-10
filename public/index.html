@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <script type="module" src="index.js"></script>
+        <title>Express</title>
+    </head>
+    <body>
+        <main class="main">
+            <header class="toolbar top">
+                <h1>Example UI</h1>
+            </header>
+
+            <div class="view">
+                <form name="authentication" action="post">
+                    <div class="toolbar docked top">
+                        <h2>Authentication</h2>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="email"
+                            value="somebody@domain.com"
+                        />
+                    </div>
+
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input
+                            type="text"
+                            name="password"
+                            id="password"
+                            placeholder="password"
+                            value="totally-secret"
+                        />
+                    </div>
+
+                    <div class="toolbar docked bottom">
+                        <input
+                            class="confirm"
+                            type="submit"
+                            id="submitAuthentication"
+                            value="Authenticate"
+                        />
+
+                        <input
+                            class="danger"
+                            type="submit"
+                            id="submitPasswordReset"
+                            value="Reset Password"
+                        />
+                    </div>
+                </form>
+
+                <form name="authorization" action="post">
+                    <div class="toolbar docked top">
+                        <h2>Authorization</h2>
+                    </div>
+
+                    <div class="field">
+                        <label for="token">Token</label>
+                        <input
+                            type="text"
+                            name="token"
+                            id="token"
+                            placeholder="token"
+                            value="1234-1234-1234-1234"
+                        />
+                    </div>
+
+                    <div class="toolbar docked bottom">
+                        <input
+                            class="confirm"
+                            type="submit"
+                            id="submitAuthorization"
+                            value="Authorize"
+                        />
+
+                        <input
+                            class="danger"
+                            type="submit"
+                            id="submitTokenReset"
+                            value="Reset Token"
+                        />
+                    </div>
+                </form>
+            </div>
+
+            <footer class="toolbar bottom">
+                <h6>&copy;Example UI</h6>
+            </footer>
+        </main>
+    </body>
+</html>

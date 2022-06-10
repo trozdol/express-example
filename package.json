@@ -1,0 +1,18 @@
+{
+    "name": "express-example",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "src/index.js",
+    "scripts": {
+        "start:dev": "nodemon --inspect ./src/index.js",
+        "test:tasks": "node ./src/task/task.test.js"
+    },
+    "keywords": [],
+    "author": "Shayne Trosdahl",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.18.1"
+    }
+}
